@@ -1,0 +1,1 @@
+#Questão: Escreva um programa que leia um número e mostre se ele é positivo.
