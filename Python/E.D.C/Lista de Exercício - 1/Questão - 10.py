@@ -23,4 +23,3 @@ if MENOR != 0:
 
 else:
     print("Não há como verificar o número, pois o MENOR é zero!")
-

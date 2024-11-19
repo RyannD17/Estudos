@@ -6,11 +6,15 @@ número3 = int(input("Digite o TERCEIRO número: "))
 número4 = int(input("Digite o QUARTO número: "))
 print()
 
-if número1 > número2 and número1 > número3 and número1 > número4:
-    print("O PRIMEIRO número digitado é MAIOR que os demais!")
+maior = número1
 
-elif número2 > número1:
-    print("O SEGUNDO número digitado é MAIOR que o primeiro!")
+if número2 > maior:
+    maior = número2
 
-else:
-    print("Os números digitados possuem o MESMO valor!")
+elif número3 > maior:
+    maior = número3
+
+elif número4 > maior:
+    maior = número4
+
+print("O MAIOR número digitado é {}!".format(maior))
