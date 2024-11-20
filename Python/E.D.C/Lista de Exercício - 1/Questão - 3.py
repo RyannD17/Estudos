@@ -2,7 +2,11 @@
 
 número = int(input("Digite um número: "))
 
-if número % 2 == 0:
+if número > 0:
     print("O número digitado é POSITIVO!")
-else:
+
+elif número < 0:
     print("O número digitado é NEGATIVO!")
+
+else:
+    print("O número {} não é POSITIVO nem NEGATIVO!".format(número))

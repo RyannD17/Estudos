@@ -6,9 +6,9 @@ número3 = int(input("Digite o TERCEIRO número: "))
 número4 = int(input("Digite o QUARTO número: "))
 print()
 
-maior = número1
+maior = número1 #Destacando o MAIOR número
 
-if número2 > maior:
+if número2 > maior: #Destacando as possíveis mudanças do MAIOR número, ou seja, o 1o número é MENOR comparado ao 2o nesta mudança, e com o 3o e 4o número também foi destacado dessa forma afim de realizar a questão
     maior = número2
 
 elif número3 > maior:

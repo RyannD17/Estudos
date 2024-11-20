@@ -7,7 +7,7 @@ print()
 if número1 > número2:
     print("O PRIMEIRO número digitado é MAIOR que o segundo!")
 
-elif número2 > número1:
+elif número1 < número2:
     print("O SEGUNDO número digitado é MAIOR que o primeiro!")
 
 else:

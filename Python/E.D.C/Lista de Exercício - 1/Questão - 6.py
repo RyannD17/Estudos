@@ -4,7 +4,7 @@ nome1 = input("Digite um nome: ")
 nome2 = input("Digite outro nome: ")
 print()
 
-if len(nome1) > len (nome2):
+if len(nome1) > len (nome2): #O "len" em py 
     print("O PRIMEIRO nome digitado possue mais caracteres que o segundo!")
 
 elif len(nome2) > len(nome1):

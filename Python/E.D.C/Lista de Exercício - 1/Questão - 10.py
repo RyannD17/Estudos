@@ -14,7 +14,7 @@ else:
     MENOR = número1
 
 #Destacando se é ou não múltiplo:
-if MENOR != 0:
+if MENOR != 0: #Se o MENOR número for 0, então a resposta será o MAIOR número, pois todo valor dividido por 0 é igual a ele mesmo. Portato, SE QUEREMOS DESCOBRIR SE O MAIOR É OU NÃO MÚLTIPLO, O MENOR NÃO PODE SER 0.
 
     if MAIOR % MENOR == 0:
         print("O MAIOR número é múltiplo do MENOR!")
