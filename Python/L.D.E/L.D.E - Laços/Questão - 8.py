@@ -1,0 +1,1 @@
+#Questão: Escreva um programa que mostre todos os números entre 1 e 100 que são múltiplos de 3 e 7.

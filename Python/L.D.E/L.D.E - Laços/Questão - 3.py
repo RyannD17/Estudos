@@ -1,0 +1,1 @@
+#Questão: Escreva um programa que leia dois números n e m. O programa deve mostrar todos os números menores que m que sejam múltiplos de n.

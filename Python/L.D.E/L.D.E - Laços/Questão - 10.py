@@ -1,0 +1,1 @@
+#Questão: Escreva um programa que leia dois números inteiros a e b, de uma equação do primeiro grau na forma f(x)=ax+b. O programa deve mostrar todos os valores de f(x) e x para o intervalo de 0 a 100, separados por vírgula, um par por linha.

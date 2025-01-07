@@ -1,0 +1,1 @@
+#Questão: Escreva um programa que leia dois números inteiros m e n e gere um vetor (array) contento n elementos, contendo a sequencia de m até m+n

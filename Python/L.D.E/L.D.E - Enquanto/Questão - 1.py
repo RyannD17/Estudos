@@ -1,0 +1,1 @@
+#Questão: Escreva um programa que leia n números e mostre a soma dos mesmos. O programa deve parar de ler quando o usuário digitar -1.

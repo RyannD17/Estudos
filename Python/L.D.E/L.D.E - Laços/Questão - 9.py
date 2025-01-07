@@ -1,0 +1,1 @@
+#Questão: Escreva um programa que leia um número inteiro n e mostre a tabuada de multiplicar de n
