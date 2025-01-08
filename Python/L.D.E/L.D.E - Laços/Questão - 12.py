@@ -1,1 +1,0 @@
-#Questão: Escreva um programa que leia duas palavras e mostre a quantidade de letras que aparecem nas duas palavras.

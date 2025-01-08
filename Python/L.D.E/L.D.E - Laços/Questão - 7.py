@@ -1,1 +1,0 @@
-#Questão: Escreva um programa que leia um número inteiro e mostre o fatorial do mesmo.

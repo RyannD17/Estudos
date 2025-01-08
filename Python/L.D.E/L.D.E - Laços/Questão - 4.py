@@ -1,1 +1,0 @@
-#Questão: Escreva um programa que efetue a soma de dois arrays.
