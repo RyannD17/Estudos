@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Consumo Energético</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .resultados {
+            margin-top: 20px;
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulação de Consumo Energético</h1>
+        <form method="POST">
+            <input type="text" id="nome" name="nome" placeholder="Nome do Eletrodoméstico" required>
+            <input type="number" id="potencia" name="potencia" placeholder="Potência (W)" required>
+            <select id="unidade" name="unidade" required>
+                <option value="h">Horas</option>
+                <option value="m">Minutos</option>
+            </select>
+            <input type="number" id="tempo" name="tempo" placeholder="Tempo de uso por dia" required>
+            <button type="submit">Calcular</button>
+        </form>
+
+        {% if consumo_mensal is not none %}
+            <div class="resultados">
+                <h2>Resultados:</h2>
+                <p><strong>Consumo Mensal:</strong> {{ consumo_mensal }} kWh</p>
+                <p><strong>Custo Mensal:</strong> R$ {{ custo_mensal }}</p>
+                <p>{{ sugestao }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
