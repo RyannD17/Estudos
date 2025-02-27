@@ -36,8 +36,8 @@ class ConsumoEnergetico:
 
         return f"Se reduzir {reducao_texto} por dia, economizará R$ {economia} por mês."
 
-@app.route('/', methods=['GET', 'POST'])
-def index():
+@app.route('/calculo', methods=['GET', 'POST'])
+def calculo():
     if request.method == 'POST':
         nome = request.form['nome']
         potencia = float(request.form['potencia'])
@@ -53,6 +53,14 @@ def index():
         return render_template('index.html', consumo_mensal=consumo_mensal, custo_mensal=custo_mensal, sugestao=sugestao)
 
     return render_template('index.html', consumo_mensal=None, custo_mensal=None, sugestao=None)
+
+@app.route('/')
+def index():
+    return render_template('Tela-Inicial.html')
+
+@app.route('/sobrenos')
+def sobrenos():
+    return render_template('Sobre-Nos.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

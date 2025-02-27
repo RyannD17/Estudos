@@ -5,46 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulação de Consumo Energético</title>
     <style>
-        body {
+        body{
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             text-align: center;
             margin: 0;
             padding: 20px;
         }
-        .container {
-            background: white;
+
+        .floating-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: auto;
+            position: fixed;
+            background-color: #b18830;
+            color: white;
+            padding: 5px 7px;
+            border-radius: 50px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 0.2s ease;
+        }
+
+        /* Efeito hover */
+        .floating-button:hover {
+            background-color: #8a6a2f;
+            transform: scale(0.9);
+        }
+
+        .container{
+            background-image: linear-gradient(to right, rgb(180, 113, 47), rgb(45, 30, 7));
             padding: 20px;
             max-width: 400px;
+            height: 700px;
             margin: auto;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 10px 10px 10px (0, 0, 0, 0.1);
             border-radius: 10px;
-        }
-        input, button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
             border: 1px solid #ccc;
         }
+
+        .container h1{
+            color: #f4f4f4;
+        }
+
+        input, button {
+            width: 90%;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            box-shadow: 0px 0px 5px #ccc;
+        }
+
         button {
-            background-color: #28a745;
-            color: white;
+            background-color: #ccc;
+            color: black;
             border: none;
             cursor: pointer;
+            width: 80px;
+            font-size: 15px;
         }
+
         button:hover {
-            background-color: #218838;
+            background-color: #8e8888;
         }
+
         .resultados {
             margin-top: 20px;
-            background: #e9ecef;
+            background: rgb(53, 88, 63);
+            color: rgb(255, 255, 255);
             padding: 10px;
             border-radius: 5px;
+            height: 200px;
+            font-size: 15px;
+            text-align: start;
+            box-shadow: 0px 0px 5px rgb(128, 122, 122);
+        }
+
+        span{
+            display: none;
+        }
+
+        .resultados h2{
+            text-align: center;
+        }
+
+        select{
+            border-radius: 10px;
+            padding: 10px;
+            min-width: 80px;
+            max-width: 100%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <a href="{{url_for('index')}}" class="floating-button">
+            ⬅ Voltar</a>
+    </header>
+
     <div class="container">
         <h1>Simulação de Consumo Energético</h1>
         <form method="POST">
@@ -67,5 +129,7 @@
             </div>
         {% endif %}
     </div>
+
+    <script src="static/Sobre-Nos.js" defer></script>
 </body>
 </html>

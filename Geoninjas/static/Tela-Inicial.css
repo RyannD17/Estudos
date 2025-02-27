@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {  
+    background-color: rgb(241, 241, 241);
+    font-family: 'Inter', sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;
+}  
+
+/* Estilos do Cabeçalho */
+header {  
+    background-color: rgba(177, 136, 48, 0.76);  
+    color: white;  
+    padding: 20px;  
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -100px;
+}  
+
+header p {
+    color: black;
+    text-align: justify;
+    max-width: 60%;
+    font-size: 20px;  
+    line-height: 1.6;
+    margin: 20px auto;
+}  
+
+a {
+    text-decoration: none
+}
+
+/* Botão */
+.button {   
+    padding: 10px 20px;  
+    font-size: 20px;
+    border: none;  
+    cursor: pointer;  
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px 2px rgb(99, 99, 99);
+    margin-top: 90px;
+    margin-bottom: 50px;
+}  
+
+/*Animação no botão*/
+.button:hover {
+    background-color: rgb(190, 190, 190);
+    font-size: 21px;
+    cursor: pointer;
+}
+
+/* Conteúdo Principal */
+main {  
+    padding: 20px;  
+}  
+
+/* Seções */
+.section {  
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;  
+    border: 1px solid #ddd;  
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}  
+
+.section h2 {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}  
+
+.section p {
+    max-width: 100%;
+    font-size: 18px;  
+    line-height: 1.6;
+    text-align: justify;
+}  
+
+/* Seção Vermelha */
+.red-section {  
+    background-color: rgba(177, 136, 48, 0.76);  
+}  
+
+/* Rodapé */
+footer {
+    background-color: black;
+    color: #ddd;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}  
+
+footer p {
+    font-size: 13px;  
+    font-family: Inter;
+}  
+
+.sobre {
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+}
+
+.sobre:hover {
+    color: rgb(241, 188, 74);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header p, .section p {
+        font-size: 16px;
+        max-width: 90%;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .button:hover {
+        background-color: rgb(190, 190, 190);
+        font-size: 19px;
+        cursor: pointer;
+    }
+    
+    .section h2 {
+        font-size: 20px;
+    }
+    
+    .button {
+        font-size: 18px;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px;
+    }
+    
+    footer p {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .sobre {
+        padding: 10px;
+    }
+}
